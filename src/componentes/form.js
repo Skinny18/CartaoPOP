@@ -29,7 +29,7 @@ function Form(){
 
     const handleRegisterGame = () => {
         alert("Cadastro efetuado com sucesso :)");
-        Axios.post("http://localhost:3001/register", {
+        Axios.post("http://localhost:3000/register", {
             cpf:values.cpf,
             nome:values.nome,
             fone:values.fone,
@@ -38,7 +38,7 @@ function Form(){
             cidade:values.cidade,
   
         }).then(()=>{
-            Axios.post("https://localhos:3001/search",{
+            Axios.post("https://localhos:3000/search",{
                 cpf:values.cpf,
                 nome:values.nome,
                 fone:values.fone,
@@ -80,7 +80,7 @@ function Form(){
     ;
 
     const handleClickbutton = () => {
-        Axios.post("http://localhost:3001/register",
+        Axios.post("http://localhost:3000/register",
         {
             cpf:values.cpf,
             nome:values.nome,
@@ -95,7 +95,7 @@ function Form(){
     };
 
     useEffect(()=>{
-        Axios.get("http://localhost:3001/perfil").then((response)=>{
+        Axios.get("http://localhost:3000/perfil").then((response)=>{
             setListForm(response.data);
 
         });

@@ -1,10 +1,13 @@
 .card-container{
-    display: flex;
-    max-width: 320px;
-    align-items: center;
-    padding: 10px;
-    margin-left: 470px;
-    text-decoration: black;
+    
+        padding: 10px;
+        border-radius: 10px;
+        text-align: center;
+        background-color: #3E78B2 ;
+        max-width: 320px;
+        align-items: center;
+        margin-left: 470px;
+    
 }
 
 .principal-usuario{

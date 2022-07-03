@@ -3,7 +3,7 @@ const app = express();
 const mysql = ("mysql2");
 const cors = require("cors");
 
-const db = mysql.createConnection({
+const db = mysql.createPool({
     host:"localhost",
     user:"root",
     password:"biel250303",
@@ -50,6 +50,6 @@ app.get("/getCards", (req, res) => {
   });
 
 
-app.listen(3001, () => {
+app.listen(3000, () => {
     console.log("rodando servidor");
 });
